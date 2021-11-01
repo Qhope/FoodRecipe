@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Katibeh);
+
+.appName {
+  font-family: Katibeh;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 53px;
+  color: #303030;
+
+  margin-left: 1em;
+}
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5em;
+  width: 100%;
+  margin-top: 29px;
+}
+.navlink {
+  width: 48.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #a6ceb6;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 776px;
+  height: 56px;
+
+  padding: 1em;
+}
+.link_button {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: Katibeh;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 29px;
+  cursor: pointer;
+  color: #303030;
+  transition: all 0.2s ease;
+}
+.link_button:before {
+  content: "";
+  position: absolute;
+  top: inherit;
+  left: inherit;
+  margin-top: 29px;
+  display: block;
+  border-radius: 28px;
+  background: rgba(0, 255, 240, 0.5);
+  width: 5px;
+  height: 5px;
+  transition: all 0.5s ease;
+}
+.link_button:hover:before {
+  width: 63px;
+  background: rgba(0, 255, 240, 0.5);
+}
+.link_button:active {
+  transform: scale(0.96);
+}
