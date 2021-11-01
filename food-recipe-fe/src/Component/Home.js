@@ -1,9 +1,11 @@
 const Home = () => {
   return (
-    <ul>
-      <li>Search</li>
-      <li>FoodRecipe</li>
-    </ul>
+    <div>
+      <ul>
+        <li>Search</li>
+        <li>FoodRecipe</li>
+      </ul>
+    </div>
   );
 };
 
