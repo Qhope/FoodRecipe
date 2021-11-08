@@ -1,0 +1,17 @@
+.tagFilter {
+  display: flex;
+  justify-content: center;
+
+  & button {
+    $color: #84a59d;
+    background: #ffffff;
+    border: 3.5px solid rgba($color, 0.6);
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 78.62px;
+    color: $color;
+    font-size: 42.27px;
+    padding: 3.53653px 28.2922px;
+    margin: 0 46.68px 0 0;
+  }
+}
