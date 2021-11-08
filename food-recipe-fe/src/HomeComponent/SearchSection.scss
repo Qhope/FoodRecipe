@@ -1,0 +1,12 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.divider {
+  content: "";
+  border-left: 0.5px solid #f28482;
+
+  margin-top: 0.5rem;
+}
