@@ -4,7 +4,7 @@
   gap: 5px;
   position: relative;
   &__items--active::after {
-    content: "asdfsadf";
+    content: "";
     display: block;
     border: 5px solid red;
     z-index: 1000;
