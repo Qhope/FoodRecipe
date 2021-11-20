@@ -1,0 +1,43 @@
+.card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  margin: 2rem;
+  padding: 1rem 1rem 4rem 1rem;
+}
+div.ant-card-body {
+  border: 1px solid;
+  padding-bottom: 3rem;
+}
+.react {
+  position: absolute;
+  top: 206px;
+  right: -3px;
+  width: 40px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  button.ant-btn-icon-only {
+    border: none;
+    background: none;
+    .icon {
+      font-size: 25px;
+      color: white;
+    }
+  }
+  .ant-bnt::hover {
+    color: pink;
+  }
+}
+
+.search {
+  padding: 0;
+  width: 200px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+}
