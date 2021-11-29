@@ -2,6 +2,7 @@ import React from "react";
 import "./SearchSection.scss";
 import { useHistory } from "react-router-dom";
 import { Card, Button, Input } from "antd";
+import { Row, Col } from "antd";
 import { AiOutlineHeart, AiOutlineLike } from "react-icons/ai";
 const { Meta } = Card;
 
@@ -12,13 +13,18 @@ const SearchSection = (props) => {
   const check = () => {
     console.log("click");
   };
-  const detail = (e) => {
+  const detail = (i) => {
+    let id = i;
     console.log("click");
-    history.push("/Detail");
+    history.push({
+      pathname: "/detail",
+      search: "?id=" + id,
+    });
   };
   return (
     <div>
       <div className="search">
+        <span></span>
         <Search />
       </div>
       <div className="card">
@@ -33,23 +39,15 @@ const SearchSection = (props) => {
                 src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
               />
             }
-            onClick={detail}
+            onClick={() => {
+              detail(i);
+            }}
           >
             <Meta
               title="Europe Street beat"
               description="www.instagram.com"
               className="description"
             />
-            <div className="react">
-              <Button
-                onClick={check}
-                icon={<AiOutlineLike className="icon" />}
-              ></Button>
-              <Button
-                onClick={console.log("Heart")}
-                icon={<AiOutlineHeart className="icon" />}
-              />
-            </div>
           </Card>
         ))}
       </div>

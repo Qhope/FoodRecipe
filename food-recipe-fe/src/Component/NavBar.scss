@@ -12,10 +12,10 @@
 }
 .menu {
   display: flex;
-  justify-content: flex-start;
-  gap: 5em;
+  justify-content: space-around;
+
   width: 100%;
-  margin-top: 29px;
+  margin-top: 15px;
 }
 .navlink {
   width: 48.5em;
@@ -28,8 +28,8 @@
   border-radius: 10px;
   width: 776px;
   height: 56px;
-
   padding: 1em;
+  margin-left: -90px;
 }
 .link_button {
   border: none;
@@ -63,4 +63,12 @@
 }
 .link_button:active {
   transform: scale(0.96);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.user {
 }

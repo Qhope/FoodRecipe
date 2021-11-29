@@ -1,4 +1,4 @@
-import SearchSection from "../Component/HomeComponent/SearchSection";
+import SearchSection from "../Component/Home/SearchSection";
 const Home = () => {
   return (
     <div>

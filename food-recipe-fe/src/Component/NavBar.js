@@ -4,10 +4,12 @@ import { AiFillHeart } from "react-icons/ai";
 import { BsFillPatchPlusFill } from "react-icons/bs";
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { FcAbout } from "react-icons/fc";
-import "../css/NavBar.css";
+import { Menu } from "antd";
+import User from "./User/User";
+import "./NavBar.scss";
 const Navbar = () => {
   return (
-    <div>
+    <div className="navbar">
       <div className="menu">
         <span className="appName">Food Recipe</span>
         <div className="navlink">
@@ -52,8 +54,10 @@ const Navbar = () => {
             </NavLink>
           </div>
         </div>
+        <div className="user">
+          <User />
+        </div>
       </div>
-      <div className="user">This is user Icon muss be a component</div>
     </div>
   );
 };
